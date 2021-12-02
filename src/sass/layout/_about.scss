@@ -1,0 +1,28 @@
+.about__button {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.28;
+
+    padding-left: 37px;
+    margin-left: 32px;
+
+    color: $buttonColor-light-red;
+    width: 176px;
+    height: 44px;
+    background: #fff;
+    border-radius: 22px;
+    border: none;
+    transition: background .25s linear;
+
+    &:hover,
+    &:focus {
+      background: $buttonColor-Hover-gray;
+    }
+
+    // .about__svg-btn {
+    //   width: 10px;
+    //   height: 12px;
+    //   margin-left: 14px;
+    // }
+  }

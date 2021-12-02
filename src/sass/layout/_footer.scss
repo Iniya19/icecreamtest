@@ -1,0 +1,96 @@
+.footer {
+  background: $light-pink-background;
+}
+
+.footter__duplicate-header {
+  width: 234px;
+  margin-bottom: 50px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 474px;
+  }
+}
+
+.footter__duplicate-header--pink {
+  font-family: Titan One;
+  line-height: 1, 14;
+  text-align: left;
+  vertical-align: top;
+  color: #ffa5ba;
+  font-size: 18px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 4%;
+  }
+  @media screen and (min-width: 769px) {
+    font-size: 30px;
+    letter-spacing: 4%;
+  }
+}
+
+.footter__duplicate-header--red {
+  font-family: Titan One;
+  line-height: 1, 14;
+  text-align: left;
+  vertical-align: top;
+  font-size: 34px;
+  letter-spacing: 4%;
+  color: #d41443;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 6%;
+  }
+  @media screen and (min-width: 769px) {
+    font-size: 58px;
+    letter-spacing: 6%;
+  }
+}
+.footer__list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.footer__contact-text {
+  margin-bottom: 46px;
+  margin-right: 20px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  text-align: right;
+
+  color: #000000;
+}
+
+.footer__phone {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #d41443;
+}
+
+hr {
+  border: none;
+  background-color: #e1e1e1;
+  color: #e1e1e1;
+  height: 1px;
+  margin-bottom: 22px;
+}
+
+.footer__copyright {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.88;
+  color: #907e82;
+  text-align: center;
+  padding: 25px;
+  margin-left: 79px;
+  margin-right: 91px;
+}

@@ -1,0 +1,78 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__ellipse"></div>
+    <!-- <img class="hero__img-center" src="./images/ice-cream/ice-cream-mob-2x.webp" alt="Мороженое"> -->
+    <picture>
+      <source srcset="./images/desktop/ice-cream-desk-1x.webp 1x, ./images/desktop/ice-cream-desk-2x.webp 2x"
+        media="(min-width: 1280px)" type="image/webp" />
+      <source srcset="./images/desktop/ice-cream-desk-1x.png 1x, ./images/desktop/ice-cream-desk-2x.png 2x"
+        media="(min-width: 1280px)" type="image/png" />
+      <source srcset="./images/tablet/ice-cream-tab-1x.webp 1x, ./images/tablet/ice-cream-tab-2x.webp 2x"
+        media="(min-width: 768px)" type="image/webp" />
+      <source srcset="./images/tablet/ice-cream-tab-1x.png 1x, ./images/tablet/ice-cream-tab-2x.png 2x"
+        media="(min-width: 768px)" type="image/png" />
+      <source srcset="./images/mobile/ice-cream-mob-1x.webp 1x, ./images/mobile/ice-cream-mob-2x.webp 2x"
+        media="(min-width: 300px)" type="image/webp" />
+      <source srcset="./images/mobile/ice-cream-mob-1x.png 1x, ./images/mobile/ice-cream-mob-2x.png 2x"
+        media="(min-width: 300px)" type="image/png" />
+      <img class="hero__img-center" src="./images/tablet/hero-icecream.png" width="171px" height="410px"
+        alt="Мороженое" />
+    </picture>
+    <picture>
+      <!-- <source srcset="./images/desktop/des-hero-center.webp    1x, ./images/desktop/des-hero-center@2x.webp 2x"
+      media="(min-width: 1280px)" type="image/webp" /> -->
+      <source srcset="./images/desktop/hero-milk.png 1x, ./images/desktop/hero-milk@2x.png 2x"
+        media="(min-width: 1280px)" type="image/png" />
+      <!-- <source srcset="./images/tablet/tab-hero-center.webp 1x, ./images/tablet/tab-hero-center@2x.webp 2x"
+      media="(min-width: 768px)" type="image/webp" /> -->
+      <source srcset="./images/tablet/hero-milk.png 1x, ./images/tablet/hero-milk@2x.png 2x" media="(min-width: 768px)"
+        type="image/png" />
+      <img class="hero__img-left" src="./images/mobile/hero-milk.png" alt="Графин с молоком" />
+    </picture>
+    <picture>
+      <!-- <source srcset="./images/desktop/des-hero-right.webp 1x, ./images/desktop/des-hero-right@2x.webp 2x"
+        media="(min-width: 1280px)" type="image/webp" /> -->
+      <source srcset="./images/desktop/hero-girl.png 1x, ./images/desktop/hero-girl@2x.png 2x"
+        media="(min-width: 1280px)" type="image/png" />
+      <!-- <source srcset="./images/tablet/tab-hero-right.webp 1x, ./images/tablet/tab-hero-right@2x.webp 2x"
+        media="(min-width: 768px)" type="image/webp" /> -->
+      <source srcset="./images/tablet/hero-girl.png 1x, ./images/tablet/hero-girl@2x.png 2x" media="(min-width: 768px)"
+        type="image/png" />
+      <img class="hero__img-right" src="./images/tablet/hero-girl.png" alt="Девушка ест мороженое" />
+    </picture>
+    <div class="hero__description-wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title_accent">passion</span>
+      </h1>
+      <ul class="hero__btn">
+        <li class="hero__btn-item">
+          <a class="hero__btn-link hero__btn-link_accent link" href="#products">Products</a>
+        </li>
+        <li class="hero__btn-item">
+          <a class="hero__btn-link link" href="#about">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__text-wrapper">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="hero__btn btn-pointer">
+          <svg class="hero__btn-icon">
+            <use href="./images/sprite-icons.svg#icon-pointer-no-fill"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="hero__stat-list">
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">16</p>
+        <p class="hero__stat-list-text">cafes</p>
+      </li>
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">23</p>
+        <p class="hero__stat-list-text">food trucks</p>
+      </li>
+    </ul>
+  </div>
+</section>

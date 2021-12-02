@@ -1,0 +1,27 @@
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0.06em;
+    color: #d41443;
+    background-color: #fff;
+  
+    border-radius: 22px;
+    border-style: none;
+  
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  
+    &--red {
+      background-color: #d41443;
+  
+      color: #fff;
+  
+      &:hover,
+      &:focus {
+        background-color: #c7133e;
+      }
+    }
+  }

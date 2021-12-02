@@ -1,0 +1,72 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <picture>
+        <source srcset="./images/mobile/logo-1x.webp 1x, ./images/mobile/logo-2x.webp 2x" type="image/webp" />
+        <source srcset="./images/mobile/logo-2x.png 1x, ./images/mobile/logo-2x.png 2x" type="image/png" />
+        <img class="logo-img" aria-label="Логотип компании" src="./images/mobile/logo-1x.png" alt="Логотип компании" />
+      </picture>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link nav-list__link_current link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#customer-reviews">About us</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#about">How it’s made?</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#products">Our products</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger-btn" type="button" data-menu-button>
+      <svg class="burger-btn__icon">
+        <use href="./images/sprite-icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="modal-btn" type="button" data-buynow-btn-open>
+      Buy now
+      <svg class="modal-btn__icon">
+        <use href="./images/sprite-icons.svg#icon-pointer"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU FOR THE HEADER -->
+
+  <div class="mobile-menu" data-menu>
+    <button class="mobile-menu__close-btn" type="button" data-menu-close>
+      <svg class="mobile-menu__close-btn-icon">
+        <use href="./images/sprite-icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="mobile-menu__modal-btn" type="button" data-buynow-btn-open-mobile>
+      Buy now
+      <svg class="mobile-menu__modal-btn-icon">
+        <use href="./images/sprite-icons.svg#icon-pointer"></use>
+      </svg>
+    </button>
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link mobile-nav__link_current link" href="./index.html">Home</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link link" href="#customer-reviews">About us</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link link" href="#about">How it’s made?</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link link" href="#products">Our products</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link link" href="#contacts">Contact</a>
+      </li>
+    </ul>
+  </div>
+</header>

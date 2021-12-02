@@ -1,0 +1,185 @@
+.products__btn {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  outline: none;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: $colorFont-white;
+  color: $buttonColor-light-red;
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    color: $colorFont-white;
+  }
+}
+
+.container_products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
+.natural {
+  font-family: Titan One;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $colorFont-pink;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.section__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $colorFont-red;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+.products {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+}
+
+.products__item {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    margin-top: 150px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 259px;
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+}
+.products__img {
+  position: absolute;
+  top: 0;
+  transform: translateY(-113px);
+  @media screen and (min-width: 768px) {
+    transform: translateY(-104px);
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-210px);
+    width: 335px;
+  }
+}
+.ice_cream {
+  background-color: $pink-basic-background;
+}
+.ice_coffee {
+  background-color: $background-beige;
+}
+.milkshakes {
+  background-color: $background-light-green;
+}
+.ice_cream,
+.ice_coffee,
+.milkshakes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 160px 40px 40px 40px;
+  @media screen and (max-width: 767px) and (max-width: 767px) {
+    width: 280px;
+    height: 485px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 150px 11px 40px 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px 44px;
+  }
+}
+.products__titel {
+  font-family: Titan One;
+  margin-bottom: 66px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $colorFont-white;
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 70px;
+  }
+}
+
+.products__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-bottom: 62px;
+  }
+}
