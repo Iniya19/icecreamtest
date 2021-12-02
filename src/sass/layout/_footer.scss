@@ -1,12 +1,21 @@
 .footer {
   background: $light-pink-background;
 }
+.container__footer {
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (min-width: 769px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
 
 .footter__duplicate-header {
   width: 234px;
   margin-bottom: 50px;
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    width: 340px;
+    width: 320px;
   }
   @media screen and (min-width: 769px) {
     width: 474px;
@@ -15,7 +24,7 @@
 
 .footter__duplicate-header--pink {
   font-family: Titan One;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-align: left;
   vertical-align: top;
   color: #ffa5ba;
@@ -33,7 +42,7 @@
 
 .footter__duplicate-header--red {
   font-family: Titan One;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-align: left;
   vertical-align: top;
   font-size: 34px;
@@ -45,7 +54,6 @@
   }
   @media screen and (min-width: 769px) {
     font-size: 58px;
-    letter-spacing: 6%;
   }
 }
 .footer__list {
@@ -84,6 +92,10 @@ hr {
 }
 
 .footer__copyright {
+  flex-wrap: wrap-reverse;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e1e1e1;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 700;
@@ -91,6 +103,4 @@ hr {
   color: #907e82;
   text-align: center;
   padding: 25px;
-  margin-left: 79px;
-  margin-right: 91px;
 }
