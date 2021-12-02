@@ -1,28 +1,167 @@
-.about__button {
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.28;
+.section__about {
+  background: $light-pink-background;
+  padding-top: 125px;
+  padding-bottom: 39px;
 
-    padding-left: 37px;
-    margin-left: 32px;
+  @media screen and (max-width: 767px) {
+    background-position: 0% 90%;
 
-    color: $buttonColor-light-red;
-    width: 176px;
-    height: 44px;
-    background: #fff;
-    border-radius: 22px;
-    border: none;
-    transition: background .25s linear;
+    background-image: url(../images/mobile/cow-background.png);
 
-    &:hover,
-    &:focus {
-      background: $buttonColor-Hover-gray;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/cow-background@2x.png);
     }
-
-    // .about__svg-btn {
-    //   width: 10px;
-    //   height: 12px;
-    //   margin-left: 14px;
-    // }
   }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/desktop/cow-background.png);
+    background-position: 0% 100%;
+  }
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section__label-about,
+.section__title-about {
+  text-align: center;
+}
+
+.section__title-about {
+  margin-bottom: 26px;
+  padding-left: 70px;
+  padding-right: 70px;
+
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.about__flex {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__card-box {
+  margin-bottom: 46px;
+}
+
+.about_img {
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: $tablet) {
+  }
+}
+
+.about__box {
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media screen and(min-width: $tablet) {
+    padding: 0;
+    margin-left: 17px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    margin-left: 74px;
+  }
+}
+
+.about__lead {
+  margin-bottom: 33px;
+}
+
+.about__lead,
+.about__text,
+.about__desc {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  // width: 220px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: 50px;
+  // padding-right: 50px;
+
+  color: $colorFont-black;
+
+  @media screen and (min-width: $tablet) {
+    width: 340px;
+
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 463px;
+
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__text {
+}
+
+.about__text,
+.about__desc {
+  margin-bottom: 20px;
+
+  color: $colorFont-gray;
+}
+
+.about__button {
+  font-family: DM Sans;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.28;
+
+  text-align: center;
+
+  padding-left: 37px;
+
+  padding-right: 37px;
+
+  color: $buttonColor-light-red;
+  // width: 176px;
+  height: 44px;
+  background: #fff;
+  border-radius: 22px;
+  border: none;
+  transition: background 0.25s linear;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &:hover,
+  &:focus {
+    background: $buttonColor-Hover-gray;
+  }
+
+  .about__svg-btn {
+    margin-left: 14px;
+  }
+}
