@@ -1,0 +1,54 @@
+<section class="section section__about">
+  <div class="container">
+    <p class="section__label section__label-about">tradition and love</p>
+
+    <h2 class="section__title section__title-about">how it’s made?</h2>
+
+    <div class="about__flex">
+      <div class="about__card-box">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/desktop/cow.png 1x, ./images/desktop/cow@2x.png 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/tablet/cow.png 1x, ./images/tablet/cow@2x.png 2x"
+            type="image/png"
+          />
+
+          <source
+            srcset="./images/mobile/cow.png 1x, ./images/mobile/cow@2x.png 2x"
+            type="image/png"
+          />
+
+          <img class="about_img" src="#" alt="milk and cow" />
+        </picture>
+      </div>
+
+      <div class="about__box">
+        <p class="about__lead">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+
+        <p class="about__desc">Aliquam erat volutpat. Aenean accumsan.</p>
+
+        <button class="about__button" type="button">
+          Read more
+          <svg class="about__svg-btn" width="5" height="8">
+            <use href="./images/sprite-icons.svg#icon-pointer"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

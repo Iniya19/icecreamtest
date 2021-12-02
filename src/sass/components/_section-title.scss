@@ -1,8 +1,10 @@
 .section__title {
+  font-family: Titan One;
   font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: #d41443;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -16,9 +18,12 @@
 }
 
 .section__label {
+  font-family: Titan One;
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffa5ba;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
