@@ -2,23 +2,24 @@
   background: $light-pink-background;
 }
 .container__footer {
-  @media screen and (max-width: 768px) {
-  }
-  @media screen and (min-width: 769px) {
-  }
-
-  @media screen and (min-width: 1200px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: $mobile) {
+    display: inline;
   }
 }
 
 .footter__duplicate-header {
   width: 234px;
   margin-bottom: 50px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 481px) and (max-width: $tablet) {
     width: 320px;
+    display: inline;
   }
   @media screen and (min-width: 769px) {
     width: 474px;
+    display: inline;
   }
 }
 
@@ -30,13 +31,14 @@
   color: #ffa5ba;
   font-size: 18px;
   padding-bottom: 20px;
+  text-transform: uppercase;
   @media screen and (min-width: 480px) and (max-width: 768px) {
     font-size: 26px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
   @media screen and (min-width: 769px) {
     font-size: 30px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -46,16 +48,19 @@
   text-align: left;
   vertical-align: top;
   font-size: 34px;
-  letter-spacing: 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: #d41443;
   @media screen and (min-width: 480px) and (max-width: 768px) {
     font-size: 48px;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
   }
   @media screen and (min-width: 769px) {
     font-size: 58px;
+    letter-spacing: 0.06em;
   }
 }
+
 .footer__list {
   display: flex;
   justify-content: right;
@@ -76,6 +81,7 @@
 }
 
 .footer__phone {
+  flex-wrap: nowrap;
   font-family: DM Sans;
   font-weight: bold;
   font-size: 12px;
@@ -91,16 +97,32 @@ hr {
   margin-bottom: 22px;
 }
 
-.footer__copyright {
-  flex-wrap: wrap-reverse;
+.footer__signature {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e1e1e1;
+  display: inline-block;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-top: 43px;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    padding-top: 29px;
+    padding-bottom: 18px;
+    margin-top: 91px;
+  }
+}
+.footer__signature-description {
   font-family: DM Sans;
-  font-size: 14px;
   font-weight: 700;
-  line-height: 1.88;
-  color: #907e82;
+  font-size: 14px;
+  line-height: 1.86;
   text-align: center;
-  padding: 25px;
+  color: #907e82;
+  @media screen and (min-width: $mobile) {
+    margin-left: 6px;
+  }
 }
