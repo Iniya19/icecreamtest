@@ -42,7 +42,7 @@
 
         <p class="about__desc">Aliquam erat volutpat. Aenean accumsan.</p>
 
-        <button class="about__button" type="button">
+        <button class="about__button" type="button" data-modal-open>
           Read more
           <svg class="about__svg-btn" width="5" height="8">
             <use href="./images/sprite-icons.svg#icon-pointer"></use>
@@ -52,3 +52,104 @@
     </div>
   </div>
 </section>
+
+<!-- Модальное окно -->
+
+<div class="backdrop is-hidden" data-modal-2>
+  <div class="about__modal">
+    <button data-modal-close class="about__btn-close">
+      <svg width="18" height="18">
+        <use href="./images/sprite-icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="about-form">
+      <h2 class="about-form__title">Buy a cow and make ice cream yourself</h2>
+
+      <p class="about-form__text">Choose a cow:</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Burenka"
+          checked
+        />
+
+        Burenka
+
+        <span class="about__checkbox"></span>
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Cvetochek"
+        />
+        Cvetochek
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Oladushek"
+        />
+        Oladushek
+      </label>
+
+      <p class="about-form__text">Choose the number of spots on the cow:</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="number"
+          value="15"
+          checked
+        />
+        15
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="number" value=" 30" />
+        30
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="number" value="45" />
+        45
+      </label>
+
+      <p class="about-form__text">Do you need a milkmaid included?</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="milkmaid"
+          value="Yes"
+          checked
+        />
+        Yes
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="milkmaid" value=" No" />
+        No
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="milkmaid"
+          value="I'll think about it"
+        />
+        I'll think about it
+      </label>
+    </form>
+
+    <button class="about-form__button" type="button">
+      Buy a cow
+      <svg class="about-form__svg-btn" width="5" height="8">
+        <use href="./images/sprite-icons.svg#icon-pointer"></use>
+      </svg>
+    </button>
+  </div>
+</div>
