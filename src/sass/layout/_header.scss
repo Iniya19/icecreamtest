@@ -143,7 +143,6 @@
   width: 100vw;
   max-width: 320px;
   height: 100vh;
-  transform: translateX(250%);
   margin: auto;
 
   display: flex;
@@ -151,8 +150,11 @@
   padding-top: 60px;
   background-color: $pink-mobile-menu-background;
 
-  transition: transform $trans-duration $timing-function;
   z-index: 2;
+  transform: translateX(250%);
+  transition:  $trans-duration $timing-function;
+  
+  
   @media screen and (min-width: $desktop){
     display: none;
     pointer-events: none;
@@ -178,6 +180,10 @@
 }
 
 .mobile-menu__modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 32px;
 
   min-width: 209px;
@@ -199,4 +205,27 @@
     width: 6px;
     height: 10px;
     margin-left: 12px;
+}
+
+.mobile-nav{
+  padding-left: 21px;
+}
+
+.mobile-nav__item{
+  padding: 13px 0 11px 0;
+}
+.mobile-nav__link {
+
+  font-family: DM Sans, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $colorFont-white;
+  transition: $trans-duration $timing-function;
+  transition-property: color;
+
+  &:hover,
+  &:focus{
+    color: $buttonColor-light-red;
+  }
 }
