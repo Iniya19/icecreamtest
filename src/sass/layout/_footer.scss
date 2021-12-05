@@ -1,17 +1,9 @@
 .footer {
   background: $light-pink-background;
-  @media screen and (min-width: $mobile) {
-    padding-top: 58px;
-  }
-  @media screen and (min-width: $tablet) {
-    padding-top: 79px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 82px;
-  }
 }
 .container__footer {
   @media screen and (min-width: $mobile) {
+    display: block;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -24,16 +16,16 @@
 }
 
 .footter__duplicate-header {
+  width: 234px;
+  height: 135px;
   @media screen and (min-width: $mobile) {
-    width: 234px;
-    height: 135px;
   }
   @media screen and (min-width: $tablet) {
     width: 340px;
     height: 183px;
   }
   @media screen and (min-width: $desktop) {
-    width: 477px;
+    width: 500px;
     height: 115px;
   }
 }
@@ -73,9 +65,8 @@
   }
 }
 .footer__contact {
-  @media screen and (min-width: $mobile) {
-    margin-top: 46px;
-  }
+  margin-top: 46px;
+
   @media screen and (min-width: $tablet) {
     margin-top: 0;
   }
@@ -91,6 +82,9 @@
   }
 }
 
+.footer__contact-tel {
+  margin-bottom: 50px;
+}
 .footer__contact-text {
   font-family: DM Sans;
   font-weight: 700;
@@ -123,18 +117,15 @@
 }
 
 .footer__signature {
-  display: block;
   align-items: center;
   justify-content: center;
   width: 100%;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e1e1e1;
-  @media screen and (min-width: $mobile) {
-    padding-top: 22px;
-    padding-bottom: 25px;
-    margin-top: 43px;
-  }
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-top: 43px;
   @media screen and (min-width: $tablet) {
     display: flex;
     padding-top: 29px;
@@ -143,8 +134,8 @@
   }
   @media screen and (min-width: $desktop) {
     padding-top: 9px;
-    padding-bottom: 19px;
-    margin-top: 97px;
+    padding-bottom: 9px;
+    margin-top: 0;
   }
 }
 
