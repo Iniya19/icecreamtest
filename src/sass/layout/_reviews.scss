@@ -3,7 +3,7 @@
 }
 .section-rewiew {
   padding-top: 123px;
-  margin-bottom: 132px;
+  padding-bottom: 132px;
 }
 .rewiew_image {
   display: flex;
@@ -20,7 +20,7 @@
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 15px;
-    padding: 26px 57px;
+    padding: 32px 57px;
 }
 }
 .rewiew-box_text::before {
@@ -29,11 +29,21 @@
   position: absolute;
   width: 54px;
   height: 40px;
+  top: -18px;
   background-image: url(../images/quotes.png);
   z-index: -1;
+  @media screen and (min-width: $tablet){
+    top: -18px;
+    left: -6px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -18px;
+    left: -13px;
+}
 }
 .rewiew-box_text {
   position: relative;
+  margin-top: 32px;
   padding: 0px 30px 20px 30px;
   font-weight: 500;
   font-size: 16px;
