@@ -1,0 +1,45 @@
+.none {
+  display: none;
+}
+.section-rewiew {
+  padding-top: 123px;
+  margin-bottom: 132px;
+}
+.rewiew_image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.rewiew-box {
+  margin-bottom: 34px;
+  padding: 32px 54px;
+  background-color: #fafafa;
+}
+.rewiew-box_text::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/quotes.png);
+  z-index: -1;
+}
+.rewiew-box_text {
+  position: relative;
+  padding: 15px 37px 7px 34px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $colorFont-black;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 28px,
+    #e1e1e1 0,
+    #e1e1e1 29px
+  );
+  background-position: center bottom 3px;
+  z-index: +2;
+}
