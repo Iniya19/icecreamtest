@@ -123,11 +123,9 @@
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e1e1e1;
-  @media screen and (min-width: $mobile) {
-    padding-top: 22px;
-    padding-bottom: 25px;
-    margin-top: 43px;
-  }
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-top: 43px;
   @media screen and (min-width: $tablet) {
     display: flex;
     padding-top: 29px;
@@ -136,8 +134,8 @@
   }
   @media screen and (min-width: $desktop) {
     padding-top: 9px;
-    padding-bottom: 19px;
-    margin-top: 97px;
+    padding-bottom: 9px;
+    margin-top: 0;
   }
 }
 
