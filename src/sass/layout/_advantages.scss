@@ -5,27 +5,27 @@
 
   background: $light-pink-background;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 36px;
     padding-right: 36px;
     padding-bottom: 140px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-left: 115px;
     padding-right: 115px;
   }
 }
 
 .advantages__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: -60px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-left: -30px;
   }
 }
@@ -34,28 +34,28 @@
   display: block;
   max-width: 230px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 180px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     max-width: 330px;
   }
 
   &:not(:last-child) {
     margin-bottom: 38px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 60px);
     margin-left: 60px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
   }
@@ -76,7 +76,7 @@
 
   color: $colorFont-red;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 9px;
     margin-bottom: 13px;
 
@@ -84,7 +84,7 @@
     line-height: 1.15;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 15px;
 
     font-size: 58px;
@@ -100,11 +100,11 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
     }
   }
@@ -118,11 +118,11 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
     }
   }
@@ -136,11 +136,11 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
     }
   }
@@ -153,13 +153,31 @@
 
   color: $colorFont-black;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.74;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 1.76;
+  }
+}
+
+.advantages__heading--moving {
+  &:hover,
+  &:focus {
+    animation-name: rotation;
+    animation-duration: 0.5s;
+    animation-timing-function: $timing-function;
+  }
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(15deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(-15deg) translateY(-20px);
   }
 }
