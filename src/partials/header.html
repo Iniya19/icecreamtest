@@ -49,24 +49,30 @@
       </p>
       <form class="form" id="#form" autocomplete="off" method="POST">
         <label class="form__field" for="name">
-          <span class="form__label">Your Name</span>
           <input class="form__input" type="text" name="username" id="name" minlength="4" 
-          maxlength="25" autofocus required>
+          maxlength="25" placeholder=" " autofocus required>
+          <span class="form__label label__name">Your Name</span>
         </label>
         <label class="form__field" for="phone">
-          <span class="form__label">Your Phone</span>
           <input class="form__input" type="phone" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required>
+                value="" placeholder=" " required>
+          <span class="form__label label__phone">Your Phone</span>
         </label>
         <label class="form__field" for="email">
-          <span class="form__label">Email</span>
           <input class="form__input" type="email" id="email"
-                pattern=".+@globex\.com" size="30" required>
+                size="30" placeholder=" " required>
+          <span class="form__label label__email">Email</span>
         </label>
+        <select class="form__field product__field" aria-label="Pick your product">
+          <option selected>Pick the product</option>
+          <option value="1">Ice-cream Gelato</option>
+          <option value="2">Mochi Ice Cream</option>
+          <option value="3">Frozen Yogurt</option>
+        </select>
         <label class="form__field" for="number">
-          <span class="form__label label--no-position">Number of portions</span>
-          <input class="form__input" type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+          <input class="form__input" type="range" placeholder=" " value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
           <output>1</output>
+          <span class="form__label label--no-position">Number of portions</span>
           </label>
         <label class="form__field" for="commentary">
           <span class="form__label"></span>
