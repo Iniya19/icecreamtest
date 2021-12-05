@@ -53,6 +53,12 @@
 
 .about__card-box {
   margin-bottom: 46px;
+  transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
 
 .about_img {
