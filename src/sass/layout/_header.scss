@@ -306,11 +306,16 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   background-color: transparent;
-  color: #d41443;
+  color: $colorFont-white;
   transition-duration: $trans-duration;
   transition-property: background-color;
   transition-timing-function: $timing-function;
 }
+
+output {
+Color: #fff;
+}
+
 
 .product__field{
   display: block;
@@ -325,7 +330,7 @@
 
   letter-spacing: 0.01em;
   background-color: #ffa5ba;
-  color: #d41443;
+  color: $colorFont-white;
   transition-duration: $trans-duration;
   transition-property: background-color;
   transition-timing-function: $timing-function;
@@ -435,12 +440,14 @@
 }
 
 .modal-title {
-  margin-bottom: 22px;
-  font-size: 20px;
-  font-family: 'Titan One', sans-serif;
-  color: $colorFont-white;
-  text-align: center;
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-family: "Titan One", sans-serif;
+    color: #fff;
+    text-align: center;
+    max-width: 465px;
 }
+
 
 .modal-title--accented {
   color: #d41443;
