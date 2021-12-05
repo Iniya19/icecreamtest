@@ -12,81 +12,81 @@
 
   padding-top: 6px;
   padding-bottom: 6px;
-  z-index: 2;
+  z-index: 3;
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     padding-top: 38px;
   }
 }
 
 .burger-btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger-btn__icon {
+  width: 20px;
+  height: 12px;
+}
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    margin-left: auto;
+    margin-right: 30px;
   }
-  .burger-btn__icon {
-    width: 20px;
-    height: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
   }
-  @media screen and (min-width: 768px) {
-    .burger-btn {
-      margin-left: auto;
-      margin-right: 30px;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .burger-btn {
-      display: none;
-    }
-  }
+}
 
 .modal-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    padding: 0;
-    border: none;
-  
-    min-width: 160px;
-    height: 44px;
-  
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-  
-    cursor: pointer;
-    background-color: #fff;
-    color: #d41443;
-    border-radius: 22px;
-  
-    transition: background-color $timing-function $trans-duration;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .modal-btn__icon {
+  padding: 0;
+  border: none;
+
+  min-width: 160px;
+  height: 44px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+
+  cursor: pointer;
+  background-color: #fff;
+  color: #d41443;
+  border-radius: 22px;
+
+  transition: background-color $timing-function $trans-duration;
+}
+
+.modal-btn__icon {
   width: 6px;
   height: 10px;
   margin-left: 12px;
 }
 
 @media screen and (max-width: 767px) {
-    .modal-btn {
-      display: none;
-    }
+  .modal-btn {
+    display: none;
   }
-  @media screen and (min-width: 1280px) {
-    .modal-btn {
-      margin-left: auto;
-  
-      transition: 250ms $timing-function;  
-      transition-property: background-color, box-shadow;
-      &:hover,
-      &:focus{
-        box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.25);  
-        background-color: $buttonColor-Hover-gray;
-      }
+}
+@media screen and (min-width: 1280px) {
+  .modal-btn {
+    margin-left: auto;
+
+    transition: 250ms $timing-function;
+    transition-property: background-color, box-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.25);
+      background-color: $buttonColor-Hover-gray;
+    }
   }
 }
 
@@ -99,7 +99,7 @@
   margin-left: 225px;
 }
 
-.nav-list__item:not(:last-child){
+.nav-list__item:not(:last-child) {
   margin-right: 35px;
 }
 
@@ -109,26 +109,26 @@
   }
 }
 
-.nav-list__link{
+.nav-list__link {
   font-weight: 800;
   font-size: 16px;
   line-height: 21px;
-  
+
   color: $colorFont-white;
 
   transition: $trans-duration $timing-function;
-    transition-property: color;
+  transition-property: color;
   &:hover,
-  &:focus{
+  &:focus {
     color: #d41443;
   }
 }
 
-.logo-img{
-  @media screen and (min-width: $desktop){
-  position: absolute;
-  top: 35px;
-  left: 45px;
+.logo-img {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 35px;
+    left: 45px;
   }
 }
 
@@ -141,7 +141,8 @@
   left: 0;
   right: 0;
   width: 100vw;
-  max-width: 320px;
+  max-width: 380px;
+
   height: 100vh;
   margin: auto;
 
@@ -152,10 +153,9 @@
 
   z-index: 2;
   transform: translateX(250%);
-  transition:  $trans-duration $timing-function;
-  
-  
-  @media screen and (min-width: $desktop){
+  transition: 2550ms $timing-function;
+
+  @media screen and (min-width: $desktop) {
     display: none;
     pointer-events: none;
   }
@@ -163,6 +163,10 @@
 
 .is-open {
   transform: translateX(0);
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .mobile-menu__close-btn {
@@ -202,20 +206,21 @@
 }
 
 .mobile-menu__modal-btn-icon {
-    width: 6px;
-    height: 10px;
-    margin-left: 12px;
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
 }
 
-.mobile-nav{
-  padding-left: 21px;
+.mobile-nav__item {
+  padding: 13px 0 11px 21px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.mobile-nav__item{
-  padding: 13px 0 11px 0;
+.mobile-nav__item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 .mobile-nav__link {
-
   font-family: DM Sans, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -225,7 +230,175 @@
   transition-property: color;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: $buttonColor-light-red;
   }
+}
+
+// <-- Order Modal Window -->
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.modal {
+  border-radius: 4px;
+  padding: 30px;
+
+  box-shadow: inset 8px 9px 28px 3px rgba(130, 72, 94, 1);
+
+  transform: scale(1);
+  transition: var(--trans-duration) var(--timing-function);
+
+  z-index: 5;
+  background-color: #c59191;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+
+.modal-btn-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 160px;
+  height: 44px;
+
+  font-family: inherit;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(212, 20, 67);
+  border-radius: 22px;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
+  &:hover,
+  &:focus {
+    color: $colorFont-white;
+    background-color: #d41443;
+    box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    background-color: #e90a42;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  background-color: transparent;
+  color: #d41443;
+  transition-duration: $trans-duration;
+  transition-property: background-color;
+  transition-timing-function: $timing-function;
+}
+
+.form__label {
+  position: absolute;
+  left: 45px;
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $colorFont-white;
+  transition: 1s $timing-function;
+  transition-property: transform, color;
+}
+
+.label--no-position {
+  top: 260px;
+}
+
+::placeholder {
+  color: #fff;
+  display: block;
+  top: 20px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover .form__label {
+    color: #d41443;
+    cursor: pointer;
+  }
+  &:focus-within .form__label {
+    color: #d41443;
+    transform: translateY(-20px);
+  }
+  &:focus-within .label--no-position {
+    transform: translateY(-5px);
+  }
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__field:focus-within .form__input {
+  outline: none;
+  border: 1px solid #ffa5ba;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .modal {
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.modal-title {
+  margin-bottom: 22px;
+  font-size: 20px;
+  font-family: 'Titan One', sans-serif;
+  color: $colorFont-white;
+  text-align: center;
+}
+
+.modal-title--accented {
+  color: #d41443;
+}
+
+#error {
+  margin-top: 20px;
 }

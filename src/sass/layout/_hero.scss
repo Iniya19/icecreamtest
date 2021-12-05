@@ -342,17 +342,26 @@
     height: 30px;
   }
 }
+
 .hero__stat-list-accent-text {
   font-family: Titan One, sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 28px; 
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: right;
+  cursor: pointer;
   color: #d41443;
   position: relative;
   z-index: 2;
+
+  &:hover,
+  &:focus{
+    animation-name: rotation;
+    animation-duration: 0.5s;
+    animation-timing-function: $timing-function;
+  }
 }
 .hero__stat-list-text {
   font-size: 8px;
@@ -374,10 +383,16 @@
   position: absolute;
   bottom: 0;
   right: 34px;
-
+  
   animation-name: appearance;
   animation-duration: 3.5s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $trans-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -427,6 +442,18 @@
     opacity: 1;
   }
 }
+
+@keyframes rotation {
+
+  50%{
+    transform: rotate(15deg) translateX(20px);
+  }
+  100%{
+    transform: rotate(-15deg) translateX(-20px);
+  }
+}
+
+
 @keyframes scale {
   0% {
     transform: scale(0.25);

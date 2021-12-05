@@ -4,7 +4,7 @@
   const mobileBtnClose = document.querySelector("[data-menu-close]");
 
   const body = document.querySelector('body');
-
+  
   menuBtnRef.addEventListener("click", () => {
     mobileMenuRef.classList.toggle("is-open");
   });
@@ -17,23 +17,11 @@
   handlerEscModalClose();
 })();
 
-// const activeSlide = document.querySelector('active-slide');
-// const sliderLines = document.querySelector('slider-lines-icon');
-
-// if (activeSlide === true) {
-//   sliderLinesIcon.classList.add("active-line");
-//   }
-
-// const btnForward = document.querySelector(".hero-section__btn__forward");
-// const btnBack = document.querySelector(".hero-section__btn__back");
-
-
-
-
 // Реализация закрытия модалки при клике в бекдроп
-const menuBtnRef = document.querySelector('[data-menu-button]');
 const backdrop = document.querySelector('.backdrop');
 const body = document.querySelector('body');
+const mobMenu = document.querySelector("[the-menu]");
+
 
 backdrop.addEventListener('click', onBackdropClick);
 function onBackdropClick(evt) {
@@ -52,13 +40,11 @@ function handlerEscModalClose() {
   }
 }
 // Функция закрытия модального окна и снятия всех классов
-const mobMenu = document.querySelector("[the-menu]");
 
 function onModalClose() {
-  
-  backdrop.classList.add('is-hidden');
-  mobMenu.classList.toggle('is-open');
 
+  backdrop.classList.add('is-hidden');
+  mobMenu.classList.remove('is-open');
   body.classList.remove('modal-open');
 
 }
