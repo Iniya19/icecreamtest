@@ -11,9 +11,17 @@
   margin-bottom: 15px;
 }
 .rewiew-box {
-  margin-bottom: 34px;
-  padding: 32px 54px;
+  margin-bottom: 30px;
+  padding: 43px 57px 26px 66px;
   background-color: #fafafa;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 24px;
+    padding: 30px 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+    padding: 26px 57px;
+}
 }
 .rewiew-box_text::before {
   content: ' ';
@@ -26,10 +34,10 @@
 }
 .rewiew-box_text {
   position: relative;
-  padding: 15px 37px 7px 34px;
+  padding: 0px 30px 20px 30px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.86;
+  line-height: 1.80;
   text-align: center;
   letter-spacing: 0.04em;
   color: $colorFont-black;
@@ -42,4 +50,44 @@
   );
   background-position: center bottom 3px;
   z-index: +2;
+  @media screen and (min-width: $desktop) {
+    padding: 0px 25px 0px 35px;
+}
+}
+.rewiew-circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  fill: $buttonColor-Hover-red;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.rewiew-circle_item:not(:last-child) {
+  margin-right: 10px;
+}
+.rewiew_name {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 35px;
+  }
+}
+.rewiew-name-slider {
+  display: flex;
+  justify-content: center;
+}
+.rewiew-name_item {
+  fill: #D9D9D9;
+}
+.rewiew-name_item:not(:last-child) {
+  margin-right: 18px;
 }
