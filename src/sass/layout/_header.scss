@@ -250,13 +250,14 @@
   border-radius: 4px;
   padding: 30px;
 
-  box-shadow: inset 8px 9px 28px 3px rgba(130, 72, 94, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px,
+  rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
   transform: scale(1);
-  transition: var(--trans-duration) var(--timing-function);
+  transition: $trans-duration $timing-function;
 
   z-index: 5;
-  background-color: #c59191;
+  background-color: #ffa5ba;
 
   @media screen and (max-width: 767px) {
     margin-top: 50px;
@@ -305,7 +306,31 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   background-color: transparent;
-  color: #d41443;
+  color: $colorFont-white;
+  transition-duration: $trans-duration;
+  transition-property: background-color;
+  transition-timing-function: $timing-function;
+}
+
+output {
+Color: #fff;
+}
+
+
+.product__field{
+  display: block;
+  outline: none;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 2px;
+  font-size: 20px;
+
+  letter-spacing: 0.01em;
+  background-color: #ffa5ba;
+  color: $colorFont-white;
   transition-duration: $trans-duration;
   transition-property: background-color;
   transition-timing-function: $timing-function;
@@ -324,8 +349,33 @@
   transition-property: transform, color;
 }
 
+// .form__input:not(:placeholder-shown){
+//   border: #ffa5ba;
+// }
+
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-30px);
+  color: #d41443;
+}
+
+.form__input:not(:placeholder-shown) ~ .label--no-position {
+  color: #d41443;
+}
+
+.label__name{
+  top: 105px;
+}
+
+.label__phone{
+  top: 170px;
+}
+
+.label__email{
+  top: 235px;
+}
+
 .label--no-position {
-  top: 260px;
+  top: 340px;
 }
 
 ::placeholder {
@@ -333,6 +383,7 @@
   display: block;
   top: 20px;
 }
+
 .form__field {
   display: flex;
   flex-direction: column;
@@ -344,20 +395,21 @@
   }
   &:focus-within .form__label {
     color: #d41443;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   &:focus-within .label--no-position {
     transform: translateY(-5px);
   }
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
 .form__field:focus-within .form__input {
   outline: none;
-  border: 1px solid #ffa5ba;
+  border: 1px solid #d41443;
 }
+
 
 @media screen and (min-width: 480px) {
   .modal {
@@ -388,12 +440,14 @@
 }
 
 .modal-title {
-  margin-bottom: 22px;
-  font-size: 20px;
-  font-family: 'Titan One', sans-serif;
-  color: $colorFont-white;
-  text-align: center;
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-family: "Titan One", sans-serif;
+    color: #fff;
+    text-align: center;
+    max-width: 465px;
 }
+
 
 .modal-title--accented {
   color: #d41443;

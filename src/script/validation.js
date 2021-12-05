@@ -5,7 +5,11 @@ $("#sendMail").on("click", function() {
   var message = $("#commentary").val().trim();
   var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-  if (name == "") {
+  if(name === "" || email === "" || phone === ""){
+    $("#error").text("Fill out the form.");
+    return false;
+  }
+  else if (name == "") {
       $("#error").text("Please, enter your name.");
       return false;
   }
