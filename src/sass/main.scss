@@ -5,11 +5,13 @@
 @import './components/button';
 @import './components/container';
 @import './components/section-title';
+@import './components/about-modal';
 
 //utilities
 @import './utilities/variables';
 @import './utilities/visually-hidden';
 @import './utilities/socials';
+@import './utilities/backdrop';
 
 //layout
 @import './layout/header';
