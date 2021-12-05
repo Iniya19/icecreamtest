@@ -1,13 +1,5 @@
 .footer {
   background: $light-pink-background;
-  padding-top: 58px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 79px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 82px;
-  }
 }
 .container__footer {
   @media screen and (min-width: $mobile) {
