@@ -96,9 +96,6 @@
   display: flex;
   justify-content: center;
 }
-.rewiew-name_item {
-  fill: none;
-}
 .fade{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -133,13 +130,22 @@
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  .active,
-  .dot:hover {
-    background-color: #5c0000;
+  .active {
+    background-image: url(../images/home.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    
   }
+  .dot.active {
+    background-color: transparent;
+  }
+  
   .dot:not(:last-child) {
     margin-right: 18px;
   }
+
   .prev, .next {
     position: absolute;
     top: 50%;
@@ -150,17 +156,17 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 10px 10px 10px 10px;
     user-select: none;
   }
   
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px 10px 10px 10px;
   }
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: #D9D9D9;
+    background-color: rgba(202, 1, 78, 0.89);
+    color: white;
   }
   
