@@ -28,7 +28,7 @@
   border-radius: 8px;
   padding: 40px 15px;
 
-  background-image: linear-gradient(to bottom, #ffa5ba 23%, #ffb8ca 23%);
+  background-image: linear-gradient(to bottom, #ffa5ba 20%, #ffb8ca 20%);
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -37,9 +37,9 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to bottom, #ffa5ba 25%, #ffb8ca 25%);
-  }
+  // @media screen and (min-width: 768px) {
+  //   background-image: linear-gradient(to bottom, #ffa5ba 25%, #ffb8ca 25%);
+  // }
 
   @media screen and (min-width: 1280px) {
     min-height: 550px;
@@ -84,10 +84,10 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   font-size: 30px;
+  //   margin-bottom: 50px;
+  // }
 }
 
 .about-form__text {
@@ -100,9 +100,9 @@
     font-size: 18px;
   }
 
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   font-size: 20px;
+  // }
   @media screen and (max-width: 479px) {
     font-size: 14px;
   }
