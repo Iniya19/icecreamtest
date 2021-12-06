@@ -358,7 +358,7 @@
 
   &:hover,
   &:focus{
-    animation-name: rotation;
+    animation-name: rotate;
     animation-duration: 0.5s;
     animation-timing-function: $timing-function;
   }
@@ -440,6 +440,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes rotate {
+    50%{
+    transform: rotate(15deg) translateX(20px);
+  }
+  100%{
+    transform: rotate(-15deg) translateX(-20px);
   }
 }
 
