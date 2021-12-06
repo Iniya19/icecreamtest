@@ -42,7 +42,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: linear-gradient(to bottom, #ffa5ba 27%, #ffb8ca 27%);
     min-height: 550px;
   }
 }
@@ -104,6 +103,9 @@
   @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 
 .about-form__label {
@@ -123,6 +125,11 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+    margin-right: 10px;
   }
 }
 
@@ -164,6 +171,12 @@
 
   border-radius: 50%;
   border: 2px solid white;
+
+  @media screen and (max-width: 479px) {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+  }
 }
 
 .about-form__input {
