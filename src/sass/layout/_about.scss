@@ -5,6 +5,8 @@
   padding-bottom: 39px;
 
   @media screen and (max-width: 767px) {
+      max-width: 1600px;
+
     background-position: 0% 90%;
 
     background-image: url(../images/mobile/cow-background.png);
