@@ -2,6 +2,7 @@
   display: none;
 }
 .section-rewiew {
+  position: relative;
   padding-top: 123px;
   padding-bottom: 132px;
 }
@@ -96,10 +97,7 @@
   justify-content: center;
 }
 .rewiew-name_item {
-  fill: #D9D9D9;
-}
-.rewiew-name_item:not(:last-child) {
-  margin-right: 18px;
+  fill: none;
 }
 .fade{
     -webkit-animation-name: fade;
@@ -127,18 +125,28 @@
       opacity: 1
     }
   }
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
   .active,
   .dot:hover {
     background-color: #5c0000;
   }
+  .dot:not(:last-child) {
+    margin-right: 18px;
+  }
   .prev, .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: $buttonColor-red;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -153,14 +161,6 @@
   
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+    color: #D9D9D9;
   }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+  
