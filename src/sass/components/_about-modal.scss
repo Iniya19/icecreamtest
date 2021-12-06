@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-background-color: rgba(177,75,75,.6);
+  background-color: rgba(177, 75, 75, 0.6);
   opacity: 1;
   transition: opacity 250ms linear, visibility 250ms linear, transform 250ms linear;
 }
@@ -17,7 +17,8 @@ background-color: rgba(177,75,75,.6);
   text-align: center;
   position: relative;
   opacity: 1;
-  width: 400px;
+  width: 100%;
+  z-index: 1;
 
   transition: opacity 250ms linear, translate 250ms linear, transform 250ms linear;
 
@@ -25,14 +26,9 @@ background-color: rgba(177,75,75,.6);
     0px 2px 1px rgb(0 0 0 / 20%);
   min-height: 500px;
   border-radius: 8px;
-  // background-color: #ffb8ca;
   padding: 40px 15px;
 
-  background-image: linear-gradient(
-  to bottom,
-  #FFA5BA 23%,
- #FFB8CA 23%
-);
+  background-image: linear-gradient(to bottom, #ffa5ba 23%, #ffb8ca 23%);
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -40,6 +36,14 @@ background-color: rgba(177,75,75,.6);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #ffa5ba 25%, #ffb8ca 25%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to bottom, #ffa5ba 27%, #ffb8ca 27%);
+    min-height: 550px;
   }
 }
 
@@ -67,7 +71,7 @@ background-color: rgba(177,75,75,.6);
 
   &:hover,
   &:focus {
-    background-color: #D41443;
+    background-color: #d41443;
   }
 }
 
@@ -75,6 +79,16 @@ background-color: rgba(177,75,75,.6);
   font-family: DM Sans;
   color: #d41443;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
 }
 
 .about-form__text {
@@ -83,14 +97,33 @@ background-color: rgba(177,75,75,.6);
   font-size: 16px;
   margin-bottom: 20px;
   margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
 
 .about-form__label {
-  margin-right: 20px;
   font-family: DM Sans;
   color: white;
   font-size: 14px;
   margin-bottom: 30px;
+  margin-right: 20px;
+
+  &:nth-child(4n + 1) {
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .about-form__button {
@@ -110,6 +143,15 @@ background-color: rgba(177,75,75,.6);
   border-radius: 22px;
   border: none;
   transition: background 0.25s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 50px;
+  }
 }
 
 .about__checkbox {
@@ -130,10 +172,13 @@ background-color: rgba(177,75,75,.6);
   margin-right: 8px;
 
   &:checked + .about__checkbox {
-  border-color: #d41443;
-  background-color: white;
-
+    border-color: #d41443;
+    background-color: white;
+  }
 }
+
+.about-form__svg-btn {
+  margin-left: 14px;
 }
 
 .backdrop.is-hidden {
