@@ -1,7 +1,7 @@
 <section class="section section-rewiew" id="#customer-reviews">
     <div class="container">
     <ul class="rewiew_list">
-        <li class="rewiew_item">
+        <li class="rewiew_item mySlides fade">
             <picture class="rewiew_image">
                 <source srcset="./images/customer1.jpg 1x, ./images/customer1@2x.jpg 2x" type="image" />
                 <img src="./images/customer1.jpg" alt="First girl" />
@@ -20,7 +20,7 @@
                 <p class="rewiew_name">Emily, Los Angeles</p>
             </div>
         </li>
-        <li class="rewiew_item none">
+        <li class="rewiew_item mySlides fade">
             <picture class="rewiew_image">
                 <source srcset="./images/customer2.jpg 1x, ./images/customer2@2x.jpg 2x" type="image" />
                 <img src="./images/customer2.jpg" alt="First girl" />
@@ -39,7 +39,7 @@
                 <p class="rewiew_name">Britney, San Diego</p>
             </div>
         </li>
-        <li class="rewiew_item none">
+        <li class="rewiew_item mySlides fade">
             <picture class="rewiew_image">
                 <source srcset="./images/customer3.jpg 1x, ./images/customer3@2x.jpg 2x" type="image" />
                 <img src="./images/customer3.jpg" alt="First girl" />
@@ -61,10 +61,13 @@
                 <p class="rewiew_name">Kira, Los Amos</p>
             </div>
         </li>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         <div class="rewiew-name_slider">
-                <svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-home-1"></use></svg>
-                <svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-Ellipse-5"></use></svg>
-                <svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-Ellipse-5"></use></svg>
+            <span class="dot" onclick="currentSlide(1)"><svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-home-1"></use></svg></span>
+            <span class="dot" onclick="currentSlide(2)"><svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-Ellipse-5"></use></svg></span>
+            <span class="dot" onclick="currentSlide(3)"><svg class="rewiew-name_item" width="12" height="12"><use href="./images/sprite-icons.svg#icon-Ellipse-5"></use></svg></span>    
         </div>
     </ul>
     </div>
