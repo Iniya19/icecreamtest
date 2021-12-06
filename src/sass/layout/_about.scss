@@ -57,7 +57,7 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
 
@@ -97,11 +97,7 @@
   font-size: 12px;
   line-height: 1.62;
 
-  // width: 220px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding-left: 50px;
-  // padding-right: 50px;
+ 
 
   color: $colorFont-black;
 
@@ -122,8 +118,7 @@
   }
 }
 
-.about__text {
-}
+
 
 .about__text,
 .about__desc {
