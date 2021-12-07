@@ -28,6 +28,13 @@
   background-color: $wite-basic-background;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  animation-name: scale;
+  animation-duration: 3s;
+    transition: $trans-duration $timing-function;
+&:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -103,6 +110,11 @@
   font-size: 12px;
   line-height: 1.5;
   color: $colorFont-gray;
+  transition: color $trans-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $colorFont-pink;
+  }
 }
 
 .buttons {
@@ -130,9 +142,6 @@
 .button--size {
   min-width: 161px;
   height: 44px;
-  @media screen and (max-width: 767px) {
-    // padding: 0 35px;
-  }
 }
 .buttons-icon {
   @media screen and (max-width: 767px) {
@@ -150,6 +159,13 @@
   @media screen and (min-width: 1280px) {
     padding: 0 39px;
   }
+  &:hover,
+  &:focus {
+    background: #ECEBEB;
+    box-shadow: 2px 5px 2px 1px rgb(0 0 0 / 25%);
+  } 
+  transition: $trans-duration $timing-function;
+  transition-property: background-color, box-shadow;
 }
 .button--red {
   @media screen and (max-width: 767px) {
@@ -161,4 +177,9 @@
   @media screen and (min-width: 1280px) {
     padding: 0 35px;
   }
+    &:hover,
+  &:focus {
+    background: #D41342;
+    box-shadow: 2px 5px 2px 1px rgb(0 0 0 / 25%);
+  } 
 }
