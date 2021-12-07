@@ -3,8 +3,18 @@
 }
 .section-rewiew {
   position: relative;
-  padding-top: 123px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  @media screen and (min-width: $tablet){
+    padding-top: 121px;
+  padding-bottom: 119px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 123px;
   padding-bottom: 132px;
+}
 }
 .rewiew_image {
   display: flex;
@@ -169,4 +179,3 @@
     background-color: rgba(202, 1, 78, 0.89);
     color: white;
   }
-  
