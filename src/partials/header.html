@@ -24,49 +24,100 @@
         </li>
       </ul>
     </nav>
-    <button class="burger-btn" type="button" data-menu-button>
+    <button class="burger-btn" type="button" data-backdrop-open data-menu-button data-mob-menu>
       <svg class="burger-btn__icon">
         <use href="./images/sprite-icons.svg#icon-burger"></use>
       </svg>
     </button>
-    <button class="modal-btn" type="button" data-buynow-btn-open>
+    <button class="modal-btn" type="button" menu-buynow-open > 
       Buy now
       <svg class="modal-btn__icon">
         <use href="./images/sprite-icons.svg#icon-pointer"></use>
       </svg>
     </button>
+
+  <!-- MODAL WINDOW FOR BUY-NOW BUTTON -->
+    <div class="backdrop-2 is-hidden-2" menu-buynow>
+    <div class="modal" >
+      <button class="modal__close-btn" type="button" data-buynow-close>
+        <svg class="mobile-menu__close-btn-icon">
+          <use href="./images/sprite-icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-title">
+        <span class="modal-title--accented">Don't hesitate</span> and order your first ice-cream right-now!
+      </p>
+      <form class="form" id="#form" autocomplete="off" method="POST">
+        <label class="form__field" for="name">
+          <input class="form__input" type="text" name="username" id="name" minlength="4" 
+          maxlength="25" placeholder=" " autofocus required>
+          <span class="form__label label__name">Your Name</span>
+        </label>
+        <label class="form__field" for="phone">
+          <input class="form__input" type="phone" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                value="" placeholder=" " required>
+          <span class="form__label label__phone">Your Phone</span>
+        </label>
+        <label class="form__field" for="email">
+          <input class="form__input" type="email" id="email"
+                size="30" placeholder=" " required>
+          <span class="form__label label__email">Email</span>
+        </label>
+        <select class="form__field product__field" aria-label="Pick your product">
+          <option selected>Pick the product</option>
+          <option value="1">Ice-cream Gelato</option>
+          <option value="2">Mochi Ice Cream</option>
+          <option value="3">Frozen Yogurt</option>
+        </select>
+        <label class="form__field" for="number">
+          <input class="form__input" type="range" placeholder=" " value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+          <output>1</output>
+          <span class="form__label label--no-position">Number of portions</span>
+          </label>
+        <label class="form__field" for="commentary">
+          <span class="form__label"></span>
+          <textarea class="form__input form__textarea" type="textarea" name="commentary" id="commentary" maxlength="200" 
+          required placeholder="Leave your message here..."></textarea>
+        </label>
+      </form>
+        <button class="modal-btn-2 button" id="sendMail" type="Submit" value="Make order">Order</button>
+        <div id="error" style="color: red"></div>
+    </div>
+   </div>
   </div>
 
   <!-- MOBILE MENU FOR THE HEADER -->
 
-  <div class="mobile-menu" data-menu>
-    <button class="mobile-menu__close-btn" type="button" data-menu-close>
-      <svg class="mobile-menu__close-btn-icon">
-        <use href="./images/sprite-icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <button class="mobile-menu__modal-btn" type="button" data-buynow-btn-open-mobile>
-      Buy now
-      <svg class="mobile-menu__modal-btn-icon">
-        <use href="./images/sprite-icons.svg#icon-pointer"></use>
-      </svg>
-    </button>
-    <ul class="mobile-nav">
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link mobile-nav__link_current link" href="./index.html">Home</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link link" href="#customer-reviews">About us</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link link" href="#about">How it’s made?</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link link" href="#products">Our products</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link link" href="#contacts">Contact</a>
-      </li>
-    </ul>
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="mobile-menu" data-menu the-menu>
+      <button class="mobile-menu__close-btn" type="button" data-menu-close data-backdrop-close>
+        <svg class="mobile-menu__close-btn-icon">
+          <use href="./images/sprite-icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="mobile-menu__modal-btn" type="button" data-buy-open>
+        Buy now
+        <svg class="mobile-menu__modal-btn-icon">
+          <use href="./images/sprite-icons.svg#icon-pointer"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link_current" href="#hero">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#about">About us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#footer">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>

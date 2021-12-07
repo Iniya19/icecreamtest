@@ -1,0 +1,474 @@
+.hero {
+    background-color: #ffb8ca;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero__container {
+    padding-top: 193px;
+    padding-bottom: 160px;
+    position: relative;
+    overflow-x: visible;
+}
+@media screen and (min-width: $tablet){
+  .hero__container {
+    padding-top: 102px;
+    padding-bottom: 34px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .hero__container{
+    padding-top: 175px;
+    padding-bottom: 55px;
+  }
+}
+
+.hero__description-wrapper {
+  width: 200px;
+  position: relative;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fff;
+
+    @media screen and (min-width: $tablet){
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+.hero__title {
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.16;
+ }
+}
+
+.hero__title_accent {
+  font-size: 48px;
+  line-height: 0.96;
+  color: #d41443;
+
+  @media screen and (min-width: $tablet){
+    font-size: 34px;
+    line-height: 0.9;
+  }
+  @media screen and (min-width: $desktop){
+    font-size: 58px;
+  }
+}
+
+
+.hero__btn{
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero__btn-link {
+    display: inline-flex;
+    padding: 8px 14px;
+    background-color: #fff;
+  
+    font-size: 8px;
+    line-height: 1.25;
+    color: #d41443;
+    border-radius: 20px;
+  
+    transition: background-color $trans-duration $timing-function;
+  
+    &:hover,
+    &:focus {
+      background-color: $buttonColor-Hover-gray;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    .hero__btn-link {
+      padding: 9px 14px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .hero__btn-link {
+      padding: 14px 24px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+  }
+  .hero__btn-link_accent {
+    background-color: $buttonColor-light-red;
+    color: $colorFont-white;
+  
+    transition: background-color $trans-duration $timing-function;
+    &:hover,
+    &:focus {
+      background-color: $buttonColor-Hover-red;
+    }
+  }
+
+.hero__img-center {
+  position: absolute;
+  top: 107px;
+  right: 32px;
+  @media screen and (min-width: $tablet) and (max-width: 1279px){
+    top: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 143px;
+    height: 336px;
+    right: 247px;
+    top: 65px;
+
+    animation-name: appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  @media screen and (min-width: $desktop){
+    right: 450px;
+    top: 112px;
+    width: 236px;
+    height: 557px;
+  }
+}
+
+.hero__ellipse {
+  position: absolute;
+  top: 83px;
+  right: -55px;
+
+  width: 346px;
+  height: 344px;
+
+  border-radius: 50%;
+  background-color: $pink-circle-background;
+
+  @media screen and (min-width: $tablet) {
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .hero__ellipse {
+    width: 324px;
+    height: 322px;
+    top: 31px;
+    right: 137px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .hero__ellipse {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    left: 485px;
+  }
+}
+
+.hero__img-left {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
+  animation-name: appearance;
+  animation-duration: 3.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: $desktop) {
+  .hero__img-left {
+    left: 150px;
+    bottom: 35px;
+  }
+
+}
+
+.hero__text {
+  margin-top: 50px;
+  margin-bottom: 7px;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #fff;
+ 
+
+  font-family: "DM Sans",sans-serif;
+  letter-spacing: .04em;
+
+  @media screen and (min-width: $tablet){
+    width: 120px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .hero__text {
+    width: 170px;
+    margin-bottom: 10px;
+    margin-top: 112px;
+    margin-left: 0;
+
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .hero__description-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero__text-wrapper {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+.hero__description-wrapper {
+    width: 349px;
+ }
+}
+
+.hero__btn {
+  padding: 6px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-pointer{
+  transition: background-color $trans-duration $timing-function;
+
+  &:hover,
+  &:focus{
+    -webkit-animation: pulsation 350ms $timing-function;
+    animation: pulsation 350ms $timing-function;
+    background-color: #d41443;
+  }
+  @media screen and (min-width: $tablet){
+    margin-left: 30px;
+    margin-top: 4px;
+  }
+  @media screen and (min-width: $desktop){
+  margin-left: 0;
+  }
+}
+
+.hero__text-wrapper {
+  width: 114px;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: $desktop) {
+  .hero__btn {
+    padding: 8px;
+    justify-content: flex-start;
+  }
+}
+.hero__btn-icon {
+  width: 8px;
+  height: 8px;
+  fill: #d41443;
+
+  transition: $trans-duration $timing-function;
+  transition-property: fill;
+}
+
+.hero__btn-icon:hover{
+    -webkit-animation: pulsation 350ms $timing-function;
+    animation: pulsation 350ms $timing-function;
+}
+
+.btn-pointer:hover .hero__btn-icon,
+.btn-pointer:focus .hero__btn-icon {
+  fill: #fff;
+}
+
+.hero__stat-list {
+  position: absolute;
+  top: 96px;
+  right: 44px;
+}
+@media screen and (min-width: $desktop) {
+  .hero__stat-list {
+    top: 156px;
+    right: 115px;
+  }
+}
+.hero__stat-list-item {
+  position: relative;
+}
+.hero__stat-list-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+.hero__stat-list-item::before {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 0;
+}
+@media screen and (min-width: $desktop) {
+  .hero__stat-list-item::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__stat-list-accent-text {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 28px; 
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  cursor: pointer;
+  color: #d41443;
+  position: relative;
+  z-index: 2;
+
+  &:hover,
+  &:focus{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-timing-function: $timing-function;
+  }
+}
+.hero__stat-list-text {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #fff;
+}
+@media screen and (min-width: $desktop) {
+  .hero__stat-list-accent-text {
+    font-size: 46px;
+  }
+  .hero__stat-list-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero__img-right {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  
+  animation-name: appearance;
+  animation-duration: 3.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $trans-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero__img-right {
+    right: 109px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__text-wrapper {
+    display: none;
+  }
+  .hero__stat-list {
+    display: none;
+  }
+  .hero__img-left {
+    display: none;
+  }
+  .hero__img-right {
+    display: none;
+  }
+}
+
+
+@keyframes pulsation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+    50%{
+    transform: rotate(15deg) translateX(20px);
+  }
+  100%{
+    transform: rotate(-15deg) translateX(-20px);
+  }
+}
+
+@keyframes rotation {
+
+  50%{
+    transform: rotate(15deg) translateX(20px);
+  }
+  100%{
+    transform: rotate(-15deg) translateX(-20px);
+  }
+}
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

@@ -1,0 +1,172 @@
+.mySlides {
+  display: none;
+}
+.section-rewiew {
+  position: relative;
+  padding-top: 123px;
+  padding-bottom: 132px;
+}
+.rewiew_image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.rewiew-box {
+  margin-bottom: 30px;
+  padding: 43px 57px 26px 66px;
+  background-color: #fafafa;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 24px;
+    padding: 30px 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+    padding: 32px 57px;
+}
+}
+.rewiew-box_text::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: -18px;
+  background-image: url(../images/quotes.png);
+  z-index: -1;
+  @media screen and (min-width: $tablet){
+    top: -18px;
+    left: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -18px;
+    left: 20px;
+}
+}
+.rewiew-box_text {
+  position: relative;
+  margin-top: 32px;
+  padding: 0px 30px 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.80;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $colorFont-black;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 28px,
+    #e1e1e1 0,
+    #e1e1e1 29px
+  );
+  background-position: center bottom 3px;
+  z-index: +2;
+  @media screen and (min-width: $desktop) {
+    padding: 0px 25px 0px 35px;
+}
+}
+.rewiew-circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  fill: $buttonColor-Hover-red;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.rewiew-circle_item:not(:last-child) {
+  margin-right: 10px;
+}
+.rewiew_name {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet){
+    margin-bottom: 35px;
+  }
+}
+.rewiew-name_slider {
+  display: flex;
+  justify-content: center;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-image: url(../images/home.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    
+  }
+  .dot.active {
+    background-color: transparent;
+  }
+  
+  .dot:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: $buttonColor-red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 10px 10px 10px 10px;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(202, 1, 78, 0.89);
+    color: white;
+  }
+  

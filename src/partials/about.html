@@ -1,32 +1,30 @@
-<section class="section section__about">
+<section class="section section__about" id="about">
   <div class="container">
     <p class="section__label section__label-about">tradition and love</p>
 
     <h2 class="section__title section__title-about">how it’s made?</h2>
 
     <div class="about__flex">
-      <div class="about__card-box">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="./images/desktop/cow.png 1x, ./images/desktop/cow@2x.png 2x"
-            type="image/png"
-          />
+      <picture class="about__card-box">
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/desktop/cow.png 1x, ./images/desktop/cow@2x.png 2x"
+          type="image/png"
+        />
 
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/tablet/cow.png 1x, ./images/tablet/cow@2x.png 2x"
-            type="image/png"
-          />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/tablet/cow.png 1x, ./images/tablet/cow@2x.png 2x"
+          type="image/png"
+        />
 
-          <source
-            srcset="./images/mobile/cow.png 1x, ./images/mobile/cow@2x.png 2x"
-            type="image/png"
-          />
+        <source
+          srcset="./images/mobile/cow.png 1x, ./images/mobile/cow@2x.png 2x"
+          type="image/png"
+        />
 
-          <img class="about_img" src="#" alt="milk and cow" />
-        </picture>
-      </div>
+        <img class="about_img" src="#" alt="milk and cow" />
+      </picture>
 
       <div class="about__box">
         <p class="about__lead">
@@ -42,7 +40,7 @@
 
         <p class="about__desc">Aliquam erat volutpat. Aenean accumsan.</p>
 
-        <button class="about__button" type="button">
+        <button class="about__button" type="button" data-modal-open>
           Read more
           <svg class="about__svg-btn" width="5" height="8">
             <use href="./images/sprite-icons.svg#icon-pointer"></use>
@@ -52,3 +50,118 @@
     </div>
   </div>
 </section>
+
+<!-- Модальное окно -->
+
+<div class="backdrop is-hidden" data-modal-2>
+  <div class="about__modal">
+    <button data-modal-close class="about__btn-close">
+      <svg width="18" height="18">
+        <use href="./images/sprite-icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="about-form">
+      <h2 class="about-form__title">Buy a cow and make ice cream yourself</h2>
+
+      <p class="about-form__text">Choose a cow:</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Burenka"
+          checked
+        />
+        <span class="about__checkbox"></span>
+
+        Burenka
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Cvetochek"
+        />
+        <span class="about__checkbox"></span>
+
+        Cvetochek
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="name"
+          value="Oladushek"
+        />
+        <span class="about__checkbox"></span>
+
+        Oladushek
+      </label>
+
+      <p class="about-form__text">Choose the number of spots on the cow:</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="number"
+          value="15"
+          checked
+        />
+        <span class="about__checkbox"></span>
+
+        15
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="number" value=" 30" />
+        <span class="about__checkbox"></span>
+
+        30
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="number" value="45" />
+        <span class="about__checkbox"></span>
+
+        45
+      </label>
+
+      <p class="about-form__text">Do you need a milkmaid included?</p>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="milkmaid"
+          value="Yes"
+          checked
+        />
+        <span class="about__checkbox"></span>
+
+        Yes
+      </label>
+      <label class="about-form__label">
+        <input class="about-form__input visually-hidden" type="radio" name="milkmaid" value=" No" />
+        <span class="about__checkbox"></span>
+
+        No
+      </label>
+      <label class="about-form__label">
+        <input
+          class="about-form__input visually-hidden"
+          type="radio"
+          name="milkmaid"
+          value="I'll think about it"
+        />
+        <span class="about__checkbox"></span>
+
+        I'll think about it
+      </label>
+      <button class="about-form__button" type="submit">
+        Buy a cow
+        <svg class="about-form__svg-btn" width="5" height="8">
+          <use href="./images/sprite-icons.svg#icon-pointer"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
