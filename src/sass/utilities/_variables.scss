@@ -1,3 +1,9 @@
+//переходы - transition & transform
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    --trans-duration:  350ms;
+}
+
 //цвета шрифтов
 $colorFont-white: #fff;
 $colorFont-red: #d41443;
@@ -20,8 +26,8 @@ $background-beige: #f0d1a5;
 $background-light-green: #c2e297;
 
 //переходы - transition & transform
-$timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-$trans-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$trans-duration: 350ms;
 
 $mobile: 480px;
 $tablet: 768px;
