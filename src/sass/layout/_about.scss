@@ -23,11 +23,20 @@
   @media screen and (min-width: $desktop) {
     background-image: url(../images/desktop/cow-background.png);
     background-position: 0% 100%;
+
+@media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/cow-background@2x.png);
+    }
+   
   }
 
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
 
 .section__label-about,
 .section__title-about {
