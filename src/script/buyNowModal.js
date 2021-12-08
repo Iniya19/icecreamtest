@@ -3,22 +3,25 @@
   const buyNowBtn = document.querySelector("[menu-buynow-open]");
   const byuNowClose = document.querySelector("[data-buynow-close]");
   const mobileBuyOpen = document.querySelector("[data-buy-open]")
+  const modalTransition = document.querySelector("[modal]");
 
   const body = document.querySelector('body');
   
     mobileBuyOpen.addEventListener("click", () => {
       buyNowMenu.classList.toggle("is-hidden-2");
-          body.classList.toggle("modal-open"); 
+      body.classList.toggle("modal-open"); 
     });
   
     buyNowBtn.addEventListener("click", () => {
       buyNowMenu.classList.toggle("is-hidden-2");
       body.classList.toggle("modal-open");
+      modalTransition.classList.add("open-modal");
   });
 
     byuNowClose.addEventListener("click", () => {
       buyNowMenu.classList.toggle("is-hidden-2");
       body.classList.toggle("modal-open");
+      modalTransition.classList.remove("open-modal");
   });
 
   handlerEscModalClose();
@@ -27,7 +30,8 @@
 // Реализация закрытия модалки при клике в бекдроп
 const backdrop2 = document.querySelector('.backdrop-2');
 const body = document.querySelector('body');
-const buyNowMenu = document.querySelector("[menu-buynow]")
+const buyNowMenu = document.querySelector("[menu-buynow]");
+const modalTransition = document.querySelector("[modal]");
 
 backdrop2.addEventListener('click', onBackdropClick);
 function onBackdropClick(evt) {
@@ -50,4 +54,5 @@ function handlerEscModalClose() {
 function onModalClose() {
   backdrop2.classList.add('is-hidden-2');
   body.classList.remove('modal-open');
+  modalTransition.classList.remove('open-modal');
 }

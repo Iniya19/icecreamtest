@@ -140,7 +140,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw;
   max-width: 380px;
 
   height: 100vh;
@@ -153,7 +152,7 @@
 
   z-index: 2;
   transform: translateX(250%);
-  transition: 2550ms $timing-function;
+  transition: $trans-duration $timing-function;
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -253,15 +252,16 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px,
   rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-  transform: scale(1);
-  transition: $trans-duration $timing-function;
-
   z-index: 5;
   background-color: #ffa5ba;
 
   @media screen and (max-width: 767px) {
     margin-top: 50px;
   }
+}
+
+.modal.open-modal {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-btn-2 {
@@ -373,9 +373,25 @@ Color: #fff;
 .label__email{
   top: 240px;
 }
+@media screen and (max-width: 412px){
+  .label__name{
+  top: 135px;
+}
+
+.label__phone{
+  top: 200px;
+}
+
+.label__email{
+  top: 265px;
+}
+}
 
 .label--no-position {
   top: 340px;
+  @media screen and (max-width: 412px){
+    top: 370px;
+  }
 }
 
 ::placeholder {
@@ -429,6 +445,8 @@ Color: #fff;
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    transform: translate(0%, -65%) scale(0.8);
+    transition: $trans-duration $timing-function;
   }
 }
 
