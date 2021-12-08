@@ -291,8 +291,12 @@
 }
 
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: $mobile){
+      position: relative;
+  }
 }
 
 .form__input {
@@ -338,7 +342,7 @@ Color: #fff;
 
 .form__label {
   position: absolute;
-  left: 45px;
+  left: 15px;
   display: inline-block;
   margin-bottom: 4px;
   font-size: 18px;
@@ -347,11 +351,8 @@ Color: #fff;
   color: $colorFont-white;
   transition: 1s $timing-function;
   transition-property: transform, color;
-}
 
-// .form__input:not(:placeholder-shown){
-//   border: #ffa5ba;
-// }
+}
 
 .form__input:not(:placeholder-shown) + .form__label {
   transform: translateY(-30px);
@@ -363,35 +364,45 @@ Color: #fff;
 }
 
 .label__name{
-  top: 110px;
+  top: 8px;
 }
 
 .label__phone{
-  top: 175px;
+  top: 73px;
 }
 
 .label__email{
-  top: 240px;
+  top: 140px;
 }
-@media screen and (max-width: 412px){
+@media screen and (max-width: 312px){
   .label__name{
-  top: 135px;
+  top: 210px;
 }
 
 .label__phone{
-  top: 200px;
+  top: 275px;
 }
 
 .label__email{
-  top: 265px;
+  top: 340px;
+ }
 }
+@media screen and (max-width: 312px){
+.label__name{
+  top: 8px;
+}
+
+.label__phone{
+  top: 72px;
+}
+
+.label__email{
+  top: 137px;
+ }
 }
 
 .label--no-position {
-  top: 340px;
-  @media screen and (max-width: 412px){
-    top: 370px;
-  }
+  top: 245px;
 }
 
 ::placeholder {
