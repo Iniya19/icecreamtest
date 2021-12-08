@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 
   cursor: pointer;
   outline: none;
@@ -21,9 +22,9 @@
   }
 }
 
-.container_products {
-  padding-top: 121px;
-  padding-bottom: 98px;
+.products_padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
   @media screen and (min-width: 768px) {
     padding-top: 122px;
     padding-bottom: 112px;
@@ -71,38 +72,49 @@
   }
 }
 .products {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 144px;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     &:not(:last-child) {
       margin-right: 20px;
     }
+    margin-top: 150px;
   }
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 23px;
     }
+    margin-top: 259px;
   }
 }
 
 .products__item {
-  display: flex;
-  justify-content: center;
-  margin-top: 130px;
+  margin: 0 auto;
+  align-items: center;
   position: relative;
   border-radius: 24px;
+  border-radius: 24px;
+  padding: 160px 40px 40px 40px;
+  transition: box-shadow $trans-duration $timing-function;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    &:not(:first-child) {
+      margin-top: 130px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
-    margin-top: 150px;
+    padding: 150px 11px 40px 11px;
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
   @media screen and (min-width: 1280px) {
-    margin-top: 259px;
+    padding: 163px 44px 50px 44px;
     &:not(:last-child) {
       margin-right: 23px;
     }
@@ -116,8 +128,11 @@
 .products__img {
   position: absolute;
   top: 0;
-  transform: translateY(-113px);
+  @media screen and (max-width: 767px) {
+    transform: translateX(-20px) translateY(-113px);
+  }
   @media screen and (min-width: 768px) {
+    left: 0;
     transform: translateY(-104px);
     width: 100%;
   }
@@ -138,22 +153,10 @@
 .ice_cream,
 .ice_coffee,
 .milkshakes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 24px;
-  padding: 160px 40px 40px 40px;
-  @media screen and (max-width: 767px) and (max-width: 767px) {
-    width: 280px;
-    height: 485px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding: 150px 11px 40px 11px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 163px 44px 50px 44px;
-  }
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex-direction: column;
 }
 .products__titel {
   font-family: Titan One;
@@ -203,41 +206,6 @@
     margin-bottom: 62px;
   }
 }
-
-// .products__animation {
-//   position: relative;
-//   overflow: hidden;
-//   display: block;
-// }
-
-// .animation {
-//   position: absolute;
-//   bottom: 0;
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-//   transform: translateY(+100%);
-//   // transition: transform $trans-duration $timing-function;
-//   width: 100%;
-//   height: 100%;
-//   padding: 10px 10px;
-//   // background-color: #fff
-//   .products__btn:hover & {
-//     transform: translateY(0%);
-//   }
-// }
-
-// .animation__titel {
-//   font-family: Titan One;
-//   margin-bottom: 30px;
-//   font-size: 20px;
-//   line-height: 23px;
-//   text-align: center;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   color: $colorFont-white;
-// }
 
 .products__icon {
   fill: $colorFont-red;
