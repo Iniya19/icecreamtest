@@ -9,21 +9,18 @@ const body = document.querySelector('body');
 
 productsOpen.addEventListener("click", () => {
     animationWindow.classList.add("animation-open");
-    body.classList.add("modal-open");
 
     handlerEscModalClose();
 })
 
 productsOpen2.addEventListener("click", () => {
     animationWindow2.classList.add("animation-open");
-    body.classList.add("modal-open");
 
     handlerEscModalClose();
 })
 
 productsOpen3.addEventListener("click", () => {
     animationWindow3.classList.add("animation-open");
-    body.classList.add("modal-open");
 
     handlerEscModalClose();
 })
@@ -68,7 +65,6 @@ function handlerEscModalClose() {
 // Closing products-modal and removing  the classes
 
 function onModalClose() {
-    body.classList.remove('modal-open');
     animationWindow.classList.remove('animation-open');
     animationWindow2.classList.remove('animation-open');
     animationWindow3.classList.remove('animation-open');
