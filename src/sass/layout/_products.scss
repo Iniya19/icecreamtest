@@ -141,23 +141,19 @@
     width: 335px;
   }
 }
-.ice_cream {
+.ice_cream,
+.ice_cream__modal {
   background-color: $pink-basic-background;
 }
-.ice_coffee {
+.ice_coffee,
+.ice_coffee__modal {
   background-color: $background-beige;
 }
-.milkshakes {
+.milkshakes,
+.milkshakes__modal {
   background-color: $background-light-green;
 }
-.ice_cream,
-.ice_coffee,
-.milkshakes {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   flex-direction: column;
-}
+
 .products__titel {
   font-family: Titan One;
   margin-bottom: 30px;
@@ -215,3 +211,65 @@
     fill: $colorFont-white;
   }
 }
+
+.animation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 24px;
+  padding-top: 100px;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  z-index: 3;
+  height: 100%;
+
+  transition: 550ms $timing-function;
+}
+
+.animation-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.products__modal {
+  max-width: 250px;
+  margin: auto;
+  border-radius: 24px;
+  padding: 40px 20px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px,
+    rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
+}
+.animation__titel {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.animation__titel {
+  font-family: Titan One;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+
+  color: $buttonColor-light-red;
+}
+.animation__text {
+  margin-bottom: 10px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.52;
+
+  color: $colorFont-white;
+}
+
+// .ice_cream__modal {
+//   background-color: rgb(255, 192, 203, 0.9);
+// }
