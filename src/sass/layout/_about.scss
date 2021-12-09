@@ -20,7 +20,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) and (max-width: 2299px) {
     background-image: url(../images/desktop/cow-background.png);
     background-position: 0% 100%;
 
@@ -35,6 +35,8 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
 
 .section__label-about,
 .section__title-about {
